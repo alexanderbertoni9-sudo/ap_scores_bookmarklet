@@ -32,7 +32,8 @@ function returnScores(){
                 if (node.nodeType === 3) {
                     var value = node.textContent.trim();
                     if (value) {
-                        console.log(value);
+                        /* overwrite the text node's content directly */
+                        node.textContent = "5";
                     }
                 }
             }
